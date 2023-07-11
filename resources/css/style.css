@@ -1,0 +1,41 @@
+:root {
+    /*Colors*/
+    --clr-primary: hsl(215, 49%, 16%);
+    --clr-secondary: hsl(46, 68%, 62%);
+    --clr-white:hsl(0 0% 100%) ;
+    --clr-black:hsl(232, 12%, 13%) ;
+
+    /*Font*/
+    --ff-primary : 'Plus Jakarta Sans', sans-serif ;
+    --ff-body: var(--ff-primary);
+    --ff-accent: var(--ff-primary);
+
+    --fw-regular : 400;
+    --fw-semi-bold : 500;
+    --fw-bold : 700;
+
+    /*Font-size Desktop*/
+    /*0.75*/
+    --fs-300 : .8125rem;/*13*/
+    --fs-400 : .875rem; /*14px*/
+    --fs-500 : 0.9375rem; /*15px*/
+    --fs-600 : 1rem; /*16*/
+    --fs-700 : 1.875rem;
+    --fs-800 : 2.5rem;
+    --fs-900 : 3.5rem;
+    /*32px 2.286rem*/
+
+    /*Fonts variables*/
+    --fs-body: var(--fs-400);
+    --fs-primary-heading: var(--fs-800);
+    --fs-secondary-heading: var(--fs-700);
+    --fs-nav: 2.25rem;
+    --fs-button: var(--fs-300);
+}
+
+body {
+    background-color: var(--clr-primary);
+    color : var(--clr-white);
+    font-family: var(--ff-body);
+
+}
