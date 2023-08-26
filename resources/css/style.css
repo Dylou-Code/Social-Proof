@@ -40,6 +40,9 @@ body {
     background-color: var(--clr-white);
     font-family: var(--ff-body);
     font-size:var(--fs-500);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
 }
 
@@ -187,7 +190,7 @@ body {
 
 .social__card-job {
     color: var(--clr-secondary);
-    font-weight: var(--fw-bold);
+    font-weight: var(--fw-semi-bold);
 }
 
 
@@ -227,9 +230,25 @@ body {
 
 @media screen and (min-width: 1024px){
 
+    .social::before {
+        content:"";
+        position: absolute;
+        inset: 0;
+        background-image: url("resources/images/bg-pattern-bottom-desktop.svg");
+        /*url("images/bg-tablet-pattern.svg");*/
+        /*background-position: 35px 35px 35px 35px;*/
+        background-repeat: no-repeat;
+        z-index: -1;
+        opacity: 1;
+    }
+
     .container {
         margin: 0 auto;
         width: 992px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh
     }
 
     .social {
@@ -281,6 +300,10 @@ body {
 
     .social__card:nth-child(3) {
         margin-top: 60px;
+    }
+
+    .social__card-name {
+        font-weight: var(--fw-bold);
     }
 
 
